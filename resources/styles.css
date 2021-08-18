@@ -1,24 +1,19 @@
 #box-container {
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,1fr)
-    gap: 10px;
-
-    width: 100px;
-    height: 100px;
-
-    border-color: black;
     position:relative; 
+    border: 1px solid green;
+    width:fit-content;
 }
 
 .box {
     border-color: black;
-    border-style: solid;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .box-hover{
     background: black;
+    width: 30px;
+    height: 30px;
 }
 

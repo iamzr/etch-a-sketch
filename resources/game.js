@@ -15,7 +15,16 @@ function createGrid(n) {
 
 createGrid(16);
 
-boxes = document.querySelectorAll("#box")
+const boxes = document.querySelectorAll(".box")
 boxes.forEach(box => {
-    box.classList = "box-hover"; 
+    box.addEventListener("mouseenter", () => {
+        box.classList = "box-hover";
+    })
 });
+
+const resetButton = document.getElementById("reset")
+resetButton.addEventListener("click", () => {
+    boxes.forEach(box => {
+        box.classList ="box"
+    })
+})
