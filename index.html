@@ -5,9 +5,22 @@
   <meta charset="UTF-8"/>
   <script src="resources/game.js" defer></script>
   <link rel="stylesheet" href="resources/styles.css">
+  <script src=
+  "https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+  </script> 
 </head>
 <body>
-  <button id="reset">Reset</button>
+  <div id="controls"></div>
+    <button id="reset">Reset</button>
+    <button id="save">Save</button>
+
+    <div class="slidercontainer">
+      <input type="range" min="1" max="64" value="16" id="grid-size">
+    </div>
   <div id="box-container"></div>
+  <div>
+    <h1 id="screenshot-heading">Screenshots:</h1>
+    <div id="screenshots"></div>
+  </div>
 </body>
 </html>
